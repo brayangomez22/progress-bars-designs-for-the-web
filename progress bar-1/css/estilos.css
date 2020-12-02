@@ -1,0 +1,122 @@
+*,*::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
+    display: table;
+    margin: 0;
+}
+
+.container{
+    width: 25%;
+    height: 50%;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container:first-of-type{
+    background-color: #ffeb3b;
+}
+
+.container:first-of-type .rail-carril{
+    stroke: white;
+}
+
+.container:first-of-type .progress{
+    stroke: #101010;
+}
+
+.container:first-of-type .percentage{
+    color: #101010;
+}
+
+.container:nth-child(2){
+    background-color: #ed5752;
+}
+
+.container:nth-child(2) .rail-carril{
+    stroke: white;
+}
+
+.container:nth-child(2) .progress{
+    stroke: #cb0000;
+}
+
+.container:nth-child(3){
+    background-color: #f1f3ce;
+}
+
+.container:nth-child(3) .rail-carril{
+    stroke: #34495e;
+}
+
+.container:nth-child(3) .progress{
+    stroke: #e91e73;
+}
+
+.container:nth-child(4){
+    background-color: #009788;
+}
+
+.container:nth-child(4) .rail-carril{
+    stroke: #fff;
+}
+
+.container:nth-child(4) .progress{
+    stroke: #ffeb3b;
+}
+
+.calibre-container{
+    display: inline-block;
+    position: relative;
+    width: 70%;
+}
+
+.calibre-container .calibre{
+    position: relative;
+    display: block;
+}
+
+.calibre-container .calibre circle{
+    stroke-width: 15;
+}
+
+.calibre-container .calibre .rail-carril{
+    fill: transparent;
+}
+
+.calibre-container .center{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 300;
+    color: white;
+}
+
+.calibre-container .center .percentage{
+    font-size: 2vw;
+}
+
+.calibre-container .center .percentSimbol{
+    font-size: 1em;
+}
+
+.calibre-container .center .valor{
+    font-size: 3em;
+}
+
+span.valor{
+    color: #333;
+    font-weight: bold;
+}
